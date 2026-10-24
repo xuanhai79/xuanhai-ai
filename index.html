@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XUÂN HẢI AI – Phần mềm AI AUTO & HÁT LIVE</title>
+<meta name="description" content="AI AUTO XUÂN HẢI: gõ 1 ý tưởng ra video AI hoàn chỉnh. HÁT LIVE AUTO: auto-tune hát live trên máy tính, điều khiển bằng điện thoại. Hotline / Zalo 0393 426 168.">
+<meta property="og:title" content="XUÂN HẢI AI – Phần mềm AI AUTO & HÁT LIVE">
+<meta property="og:description" content="Làm video AI hàng loạt và hát live auto-tune bằng tiếng Việt. Dùng thử trước, mua sau.">
+<meta property="og:image" content="img/logo.png">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+:root{
+  --bg:#071018; --bg2:#0c1a26; --card:#0f2232; --line:#1d3a50;
+  --text:#e8f4fb; --muted:#9cb6c7; --cyan:#3fe0ff; --yellow:#ffd23f; --green:#2ecc71;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Be Vietnam Pro",system-ui,sans-serif;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:48px 48px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(7,16,24,.55),var(--bg) 70%);z-index:-1}
+a{color:var(--cyan)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{position:sticky;top:0;z-index:10;background:rgba(7,16,24,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+header.top img{width:38px;height:38px;border-radius:50%}
+header.top b{font-weight:800;letter-spacing:.5px}
+header.top nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+header.top nav a{color:var(--muted);text-decoration:none}
+header.top nav a:hover{color:var(--text)}
+.hero{text-align:center;padding:64px 0 40px}
+.hero h1{font-size:clamp(30px,6vw,54px);line-height:1.15;margin:0 0 14px;font-weight:800;text-shadow:0 0 24px rgba(63,224,255,.45)}
+.hero p{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:680px;margin:0 auto 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;border:2px solid transparent;cursor:pointer}
+.btn.zalo{background:var(--yellow);color:#111}
+.btn.zalo:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:var(--cyan);color:var(--cyan);background:transparent}
+.btn.ghost:hover{background:rgba(63,224,255,.1)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--muted)}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--bg2)}
+section.sp{padding:48px 0;border-top:1px solid var(--line)}
+.sp-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:start}
+.tag{display:inline-block;font-size:13px;font-weight:700;color:#111;background:var(--cyan);border-radius:6px;padding:2px 10px;margin-bottom:8px}
+h2{font-size:clamp(26px,4vw,36px);margin:0 0 8px;line-height:1.2}
+.lead{color:var(--muted);margin:0 0 18px;font-size:17px}
+ul.feat{list-style:none;padding:0;margin:0 0 22px}
+ul.feat li{padding:7px 0 7px 30px;position:relative}
+ul.feat li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--green);font-weight:800}
+.video{position:relative;width:100%;max-width:320px;margin:0 auto;aspect-ratio:9/16;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 0 30px rgba(63,224,255,.15)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
+.prices.two{grid-template-columns:repeat(2,1fr)}
+.price{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 12px;text-align:center}
+.price.hot{border-color:var(--yellow);position:relative}
+.price.hot::after{content:"Tiết kiệm nhất";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--yellow);color:#111;font-size:11px;font-weight:800;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.price .t{color:var(--muted);font-size:14px}
+.price .v{font-size:24px;font-weight:800;color:var(--text)}
+.price .n{font-size:12.5px;color:var(--muted)}
+.note{font-size:14px;color:var(--muted);margin:10px 0 0}
+.req{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:14.5px;color:var(--muted);margin-top:16px}
+.req b{color:var(--text)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.step .num{width:34px;height:34px;border-radius:50%;background:var(--cyan);color:#111;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.step h3{margin:0 0 4px;font-size:17px}
+.step p{margin:0;color:var(--muted);font-size:14.5px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+details summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding:32px 0 90px;text-align:center;color:var(--muted);font-size:14px}
+.float{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+@media (max-width:820px){
+  .sp-grid{grid-template-columns:1fr}
+  .sp-grid .video{order:-1}
+  .steps{grid-template-columns:1fr 1fr}
+  header.top nav{display:none}
+}
+@media (max-width:480px){
+  .prices{grid-template-columns:1fr}
+  .prices.two{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <img src="img/logo.png" alt="Logo XUÂN HẢI AI"><b>XUÂN HẢI AI</b>
+  <nav><a href="#aiauto">AI AUTO</a><a href="#hatlive">HÁT LIVE</a><a href="#cachmua">Cách mua</a><a href="#hoidap">Hỏi đáp</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Phần mềm AI tiếng Việt<br>dùng được ngay trên máy tính</h1>
+    <p>Làm video AI hàng loạt cho TikTok, YouTube, Facebook. Hát live chuẩn nốt với auto-tune. Dùng thử trước, thấy được rồi hãy mua.</p>
+    <div class="btns">
+      <a class="btn zalo" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Nhắn Zalo 0393 426 168</a>
+      <a class="btn ghost" href="#aiauto">Xem phần mềm ↓</a>
+    </div>
+    <div class="chips"><span>🇻🇳 Giao diện tiếng Việt</span><span>💻 Windows 10 / 11</span><span>🔑 Key theo máy, gia hạn dễ</span><span>📞 Hỗ trợ qua Zalo</span></div>
+  </div>
+</div>
+
+<section class="sp" id="aiauto"><div class="wrap sp-grid">
+  <div>
+    <span class="tag">LÀM VIDEO AI</span>
+    <h2>AI AUTO XUÂN HẢI</h2>
+    <p class="lead">Gõ 1 ý tưởng, phần mềm tự viết kịch bản, tạo clip AI, lồng tiếng và ghép thành video hoàn chỉnh.</p>
+    <ul class="feat">
+      <li>Video TikTok bán hàng, phim ngắn, MV, video YouTube từ 1 câu ý tưởng</li>
+      <li>Tự viết kịch bản, chia cảnh, tạo ảnh và clip bằng công cụ AI của Google</li>
+      <li>Giọng đọc tiếng Việt, ghép nhạc, xuất video dọc hoặc ngang</li>
+      <li>Làm nhiều video một lúc, không cần biết dựng phim</li>
+      <li>Không cần API key: dùng tài khoản Google của bạn</li>
+    </ul>
+    <div class="prices">
+      <div class="price"><div class="t">1 tháng</div><div class="v">199k</div><div class="n">dùng thử cho biết</div></div>
+      <div class="price"><div class="t">6 tháng</div><div class="v">990k</div><div class="n">≈ 165k / tháng</div></div>
+      <div class="price hot"><div class="t">1 năm</div><div class="v">1,6 triệu</div><div class="n">≈ 133k / tháng</div></div>
+    </div>
+    <div class="btns" style="justify-content:flex-start">
+      <a class="btn zalo" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Nhắn Zalo nhận key dùng thử</a>
+      <a class="btn ghost" href="https://drive.google.com/file/d/13HoLVF71AKU9A2zfAifYvThNShA0W_9P/view" target="_blank" rel="noopener">⬇ Tải phần mềm</a>
+    </div>
+    <div class="req"><b>Yêu cầu:</b> Windows 10 / 11 64-bit, trình duyệt Google Chrome, tài khoản Google dùng được Google Vids và Gemini.</div>
+  </div>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Obv5D4ZntVQ" title="AI AUTO XUÂN HẢI" loading="lazy" allowfullscreen></iframe></div>
+</div></section>
+
+<section class="sp" id="hatlive"><div class="wrap sp-grid">
+  <div>
+    <span class="tag">HÁT LIVE</span>
+    <h2>HÁT LIVE AUTO XUÂN HẢI</h2>
+    <p class="lead">Hát vào micro là giọng tự kéo về đúng nốt, có vang, echo như phòng thu, phát thẳng lên TikTok, Facebook, YouTube Live.</p>
+    <ul class="feat">
+      <li>Auto-tune thời gian thực, tự dò tông bài hát</li>
+      <li>Phong cách giọng: Tự nhiên, Ballad, Bolero, Pop, Robot</li>
+      <li>Vang, echo, nén, tự chồng bè ở điệp khúc</li>
+      <li>Hát loa ngoài có chống hú; hát tai nghe độ trễ thấp</li>
+      <li>Điều khiển bằng điện thoại: chọn bài, âm lượng, hiệu ứng</li>
+      <li>Thêm beat karaoke từ máy, phát karaoke YouTube</li>
+    </ul>
+    <div class="prices two">
+      <div class="price"><div class="t">1 tháng</div><div class="v">99k</div><div class="n">hát thử cả tháng</div></div>
+      <div class="price hot"><div class="t">1 năm</div><div class="v">590k</div><div class="n">≈ 49k / tháng</div></div>
+    </div>
+    <div class="btns" style="justify-content:flex-start">
+      <a class="btn ghost" href="https://drive.google.com/file/d/1zQTQHSAAzIRrkR2tFtu-QyBHyRW8gT5H/view" target="_blank" rel="noopener">⬇ Tải về – dùng thử 3 ngày</a>
+      <a class="btn zalo" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Nhắn Zalo mua key</a>
+    </div>
+    <div class="req"><b>Yêu cầu:</b> Windows 10 / 11 64-bit, micro + card âm thanh (khuyên dùng card USB có ASIO). <b>Dùng thử miễn phí 3 ngày</b>, không cần key.</div>
+  </div>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/YgsaeTpiReQ" title="HÁT LIVE AUTO XUÂN HẢI" loading="lazy" allowfullscreen></iframe></div>
+</div></section>
+
+<section class="sp" id="cachmua"><div class="wrap">
+  <h2>Cách mua key</h2>
+  <p class="lead">4 bước, khoảng 5 phút.</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Tải và mở phần mềm</h3><p>Giải nén file zip ra một thư mục, nhấp đúp file .exe.</p></div>
+    <div class="step"><div class="num">2</div><h3>Chép Mã máy</h3><p>Bảng "Kích hoạt bản quyền" có nút Chép Mã máy.</p></div>
+    <div class="step"><div class="num">3</div><h3>Gửi Zalo + chuyển khoản</h3><p>Gửi Mã máy và gói muốn mua qua Zalo 0393 426 168, chuyển khoản theo thông tin được gửi lại.</p></div>
+    <div class="step"><div class="num">4</div><h3>Dán key, dùng ngay</h3><p>Dán key nhận được, bấm Kích hoạt. Nút 🔑 cho biết thời hạn còn lại.</p></div>
+  </div>
+</div></section>
+
+<section class="sp" id="hoidap"><div class="wrap">
+  <h2>Hỏi đáp</h2>
+  <details><summary>Windows báo "Windows đã bảo vệ PC của bạn"?</summary><p>Bấm "Thông tin bổ sung" rồi "Vẫn chạy". Phần mềm mới nên Windows chưa nhận diện, không phải virus.</p></details>
+  <details><summary>Đổi máy hoặc cài lại Windows thì sao?</summary><p>Key gắn với Mã máy. Đổi máy, cài lại Windows: nhắn Zalo kèm Mã máy mới để được hỗ trợ cấp key mới.</p></details>
+  <details><summary>AI AUTO có tốn tiền API không?</summary><p>Không cần API key. Phần mềm dùng các công cụ AI của Google qua tài khoản Google của bạn, nên số video làm được mỗi ngày phụ thuộc hạn mức Google cho tài khoản đó. Google có thể thay đổi công cụ hoặc hạn mức bất cứ lúc nào; khi giao diện Google đổi, XUÂN HẢI AI sẽ cập nhật bản mới.</p></details>
+  <details><summary>HÁT LIVE dùng để live trên TikTok, OBS thế nào?</summary><p>Cần một card âm thanh ảo (ví dụ VB-Cable miễn phí): chọn nó làm đầu ra trong HÁT LIVE, rồi chọn làm micro trong TikTok LIVE Studio / OBS. Hướng dẫn chi tiết có trong thư mục phần mềm.</p></details>
+  <details><summary>Beat karaoke có bản quyền không?</summary><p>Phần mềm không kèm bài hát. Bạn tự thêm beat của mình và tự chịu trách nhiệm bản quyền khi phát live.</p></details>
+  <details><summary>Cần hỗ trợ cài đặt?</summary><p>Nhắn Zalo 0393 426 168 để được hướng dẫn cài đặt.</p></details>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:var(--text)">XUANHAI STUDIO</b> · Hotline / Zalo <a href="https://zalo.me/0393426168" target="_blank" rel="noopener">0393 426 168</a></p>
+    <p>Kênh YouTube: <a href="https://www.youtube.com/@xuanhaiaistudio" target="_blank" rel="noopener">@xuanhaiaistudio</a></p>
+  </div>
+</footer>
+
+<a class="btn zalo float" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Zalo</a>
+</body>
+</html>
