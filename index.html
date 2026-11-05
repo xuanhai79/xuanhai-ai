@@ -66,6 +66,8 @@ ul.feat li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--gr
 .req b{color:var(--text)}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
 .step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.steps.two{grid-template-columns:repeat(2,1fr)}
+.step .btn{margin-top:14px}
 .step .num{width:34px;height:34px;border-radius:50%;background:var(--cyan);color:#111;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
 .step h3{margin:0 0 4px;font-size:17px}
 .step p{margin:0;color:var(--muted);font-size:14.5px}
@@ -83,7 +85,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 90px;text-align:center;co
 @media (max-width:480px){
   .prices{grid-template-columns:1fr}
   .prices.two{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr}
+  .steps,.steps.two{grid-template-columns:1fr}
   .btn{width:100%}
 }
 </style>
@@ -92,7 +94,7 @@ footer{border-top:1px solid var(--line);padding:32px 0 90px;text-align:center;co
 
 <header class="top"><div class="wrap">
   <img src="img/logo.png" alt="Logo XUÂN HẢI AI"><b>XUÂN HẢI AI</b>
-  <nav><a href="#aiauto">AI AUTO</a><a href="#hatlive">HÁT LIVE</a><a href="#cachmua">Cách mua</a><a href="#hoidap">Hỏi đáp</a></nav>
+  <nav><a href="#choshop">Cho shop</a><a href="#aiauto">AI AUTO</a><a href="#hatlive">HÁT LIVE</a><a href="#cachmua">Cách mua</a><a href="#hoidap">Hỏi đáp</a></nav>
 </div></header>
 
 <div class="wrap">
@@ -102,10 +104,22 @@ footer{border-top:1px solid var(--line);padding:32px 0 90px;text-align:center;co
     <div class="btns">
       <a class="btn zalo" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Nhắn Zalo 0393 426 168</a>
       <a class="btn ghost" href="#aiauto">Xem phần mềm ↓</a>
+      <a class="btn ghost" href="#choshop">Tôi là chủ shop ↓</a>
     </div>
     <div class="chips"><span>🇻🇳 Giao diện tiếng Việt</span><span>💻 Windows 10 / 11</span><span>🔑 Key theo máy, gia hạn dễ</span><span>📞 Hỗ trợ qua Zalo</span></div>
   </div>
 </div>
+
+<section class="sp" id="choshop"><div class="wrap">
+  <span class="tag">CHO SHOP ONLINE</span>
+  <h2>Shop cần video bán hàng mỗi tuần?</h2>
+  <p class="lead">Khách trên Shopee và TikTok Shop mua qua video và livestream ngày càng nhiều. Shop làm đẹp, đồ ăn, đồ gia dụng cần video mới đều đặn. XUÂN HẢI AI có 2 cách, không cần thuê người quay dựng.</p>
+  <div class="steps two">
+    <div class="step"><h3>Tự làm bằng AI AUTO</h3><p>Hợp với shop cần nhiều video. Gõ ý tưởng về sản phẩm, phần mềm viết kịch bản, tạo clip, lồng tiếng và ghép video dọc cho TikTok, Reels, Shorts. Từ 199k / tháng.</p><a class="btn ghost" href="#aiauto">Xem AI AUTO</a></div>
+    <div class="step"><h3>Thuê XUÂN HẢI AI làm</h3><p>Hợp với shop không có thời gian. Gửi sản phẩm và thông tin shop, nhận video hoàn chỉnh. Từ 50k đến 3 triệu tùy yêu cầu, nhắn Zalo để chốt giá.</p><a class="btn zalo" href="https://zalo.me/0393426168" target="_blank" rel="noopener">💬 Nhắn Zalo báo giá</a></div>
+  </div>
+  <p class="note">Video chỉ nói đúng thông tin shop cung cấp, không dựng lời khách khen giả. Shop tự chịu trách nhiệm giấy tờ sản phẩm và bật nhãn nội dung AI khi nền tảng yêu cầu.</p>
+</div></section>
 
 <section class="sp" id="aiauto"><div class="wrap sp-grid">
   <div>
